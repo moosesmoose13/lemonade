@@ -1,0 +1,20 @@
+class LemonadeStand:
+    def __init__(self):
+        self.lemonade_made = False
+    
+    def make_lemonade(self):
+        # Code to make lemonade goes here
+        self.lemonade_made = True
+    
+    def sell_lemonade(self):
+        if not self.lemonade_made:
+            print("Sorry, we cannot sell lemonade until it has been made.")
+        else:
+            print("Lemonade is ready to be sold! Place your order now.")
+
+# Example usage:
+stand = LemonadeStand()
+stand.sell_lemonade()  # Output: "Sorry, we cannot sell lemonade until it has been made."
+
+stand.make_lemonade()
+stand.sell_lemonade()  # Output: "Lemonade is ready to be sold! Place your order now."
